@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('#{$url-font}/MyriadPro-Regular.eot');
+    src: url('#{$url-font}/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$url-font}/MyriadPro-Regular.woff2') format('woff2'),
+        url('#{$url-font}/MyriadPro-Regular.woff') format('woff'),
+        url('#{$url-font}/MyriadPro-Regular.ttf') format('truetype'),
+        url('#{$url-font}/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('#{$url-font}/MyriadPro-Bold.eot');
+    src: url('#{$url-font}/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$url-font}/MyriadPro-Bold.woff2') format('woff2'),
+        url('#{$url-font}/MyriadPro-Bold.woff') format('woff'),
+        url('#{$url-font}/MyriadPro-Bold.ttf') format('truetype'),
+        url('#{$url-font}/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('#{$url-font}/MyriadPro-Semibold.eot');
+    src: url('#{$url-font}/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('#{$url-font}/MyriadPro-Semibold.woff2') format('woff2'),
+        url('#{$url-font}/MyriadPro-Semibold.woff') format('woff'),
+        url('#{$url-font}/MyriadPro-Semibold.ttf') format('truetype'),
+        url('#{$url-font}/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
