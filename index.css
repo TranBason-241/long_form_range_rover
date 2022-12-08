@@ -160,7 +160,7 @@ select {
   padding: 0;
   width: 1920px;
   max-width: 100%;
-  /* height: 923px; */
+  height: auto;
   /* max-height: 100%; */
 }
 .main-content {
