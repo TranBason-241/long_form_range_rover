@@ -44,7 +44,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
     </style>
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>Sun Grand City Hillside Residence tại Phú Quốc - VnExpress</title>
   </head>
 
@@ -283,12 +283,21 @@
       <div class="section-content clearfix">
         <div class="wrapper-content">
           <div id="overlay"></div>
-          <div class="container">
-            <div class="test"></div>
+          <div class="my-container">
             <div class="main-content">
-              <div class="title">
+              <img
+                class="mobile"
+                style="margin-bottom: 20px"
+                src="images/banner_mobile.png"
+                alt=""
+              />
+              <div class="title pc">
                 <h1>Đăng ký lái thử</h1>
                 <h1>Land Rover Range Rover Velar</h1>
+              </div>
+              <div class="title mobile">
+                <h1>Đăng ký lái thử Land Rover</h1>
+                <h1>Range Rover Velar</h1>
               </div>
               <p class="desc">
                 &#8226; Không chỉ kế thừa khả năng vận hành mạnh mẽ trứ danh của
@@ -305,30 +314,63 @@
                 <p class="form-title">THÔNG TIN ĐĂNG KÝ</p>
                 <div class="input-grid">
                   <div class="form-group">
-                    <input type="text" name="name" />
-                    <label>Enter first name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      required="required"
+                      rules="required"
+                      class="form-control"
+                    />
+                    <label>Họ và tên</label>
+                    <span class="form-message"></span>
                   </div>
 
                   <div class="form-group">
-                    <input type="text" name="name" />
-                    <label>Enter first name</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      required="required"
+                      rules="required"
+                      class="form-control"
+                    />
+                    <label>Số điện thoại</label>
+                    <span class="form-message">sss</span>
                   </div>
                   <div class="form-group">
-                    <input type="text" name="name" />
-                    <label>Enter first name</label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      required="required"
+                      rules="required"
+                      class="form-control"
+                    />
+                    <label>Email</label>
+                    <span class="form-message"></span>
                   </div>
 
                   <div class="form-group select-option">
-                    <input type="text" name="name" />
-                    <label>Select first name</label>
+                    <input
+                      type="text"
+                      name="area"
+                      id="area"
+                      required="required"
+                      rules="required"
+                      class="form-control"
+                    />
+                    <label>Chọn khu vực đại lý</label>
+
                     <i class="fa fa-caret-down icon"></i>
                     <div class="list-item">
                       <div class="item">Thành Phố Hồ Chí Minh</div>
                       <div class="item">Thủ Đô Hà Nội</div>
                     </div>
+                    <span class="form-message"></span>
                   </div>
                 </div>
-                <button class="btn-submit">ĐĂNG KÝ LÁI THỬ</button>
+                <button class="btn-submit form-submit">ĐĂNG KÝ LÁI THỬ</button>
               </div>
               <div class="left-slider">
                 <div class="swiper mySwiper">
@@ -477,6 +519,7 @@
           clickable: true,
         },
         debugger: true,
+        loop: true,
       });
     </script>
     <script src="index.js"></script>

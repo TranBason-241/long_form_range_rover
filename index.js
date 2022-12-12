@@ -2,7 +2,6 @@
 
 let listItemEle = document.getElementsByClassName("list-item")[0];
 if (listItemEle) {
-  console.log(1);
   listOptionItem = document.getElementsByClassName("item");
   let clearActiveItem = () => {
     for (let item of listOptionItem) {
@@ -25,8 +24,18 @@ if (listItemEle) {
       item.classList.add("item-active");
       setSetText(item.innerText);
     };
-    // item.onmouseover = () => {
-    //   clearActiveItem();
-    // };
   }
 }
+
+let showImgDes = () => {
+  console.log(123);
+  let listImgDes = document.querySelectorAll(".img_des");
+
+  for (element of listImgDes) {
+    element.style.animation = "";
+    element.style.animation = "aniName 2s linear";
+  }
+};
+document.querySelector(".swiper-button-next").onclick = () => {
+  showImgDes();
+};
